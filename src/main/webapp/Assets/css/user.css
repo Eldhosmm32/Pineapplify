@@ -1,0 +1,47 @@
+@media only screen and (max-width: 600px) {
+    .logos {
+        top: 8px !important;
+    }
+
+    .parallax-container {
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+
+    .navulcol {
+        color: #000;
+    }
+
+    .logos {
+        top: 12px;
+    }
+
+    nav ul li.active {
+        border-bottom: #26a69a 3px solid;
+    }
+
+    nav ul li:hover {
+        border-bottom: #009688 3px solid;
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.dpos {
+    top: 64px !important;
+    overflow: hidden;
+}
+
+.raisedrow {
+    position: relative;
+    margin-top: -250px
+}
+
+.noti-card {
+    height: 316px;
+    overflow-y: scroll;
+}

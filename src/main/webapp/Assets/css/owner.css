@@ -1,0 +1,144 @@
+.select-wrapper input.select-dropdown {
+    border: 1px #82a59e7c solid;
+    border-radius: 5px;
+    margin-top: 4px !important;
+}
+
+.boxer {
+    margin-top: 20px;
+    padding: 0px !important;
+    border: 1px #e1e1e0 solid;
+    border-radius: 3px;
+}
+
+.boxer-txt {
+    padding-top: 14px !important;
+    color: grey;
+}
+
+.boxer-img{
+    margin-top: 14px;
+    padding-right: 3px !important;
+}
+.boxer-td {
+    padding: 8px 8px 8px 5%;
+}
+.boxer-tbl{
+    border-right: 1px #e0e0e0 solid;
+}
+
+body {
+    height: 100vh !important;
+    padding: 0;
+}
+
+.select-wrapper input.select-dropdown {
+    padding-left: 5px;
+}
+@media only screen and (min-width: 601px) {
+    .modal {
+        width: 35%;
+        max-height: none !important;
+        top: 2% !important;
+    }
+
+    .tl-align {
+        text-align: left;
+    }
+    .card .card-title {
+        font-size: 18px !important;
+        font-weight: 400;
+    }
+    .newborder {
+        border-radius: 50px;
+        margin: 0px !important;
+    }
+
+    .block {
+        background-color: white;
+        width: 5px;
+        height: 95%;
+        position: absolute;
+        left: 49.7%;
+        border: 1px solid lightgrey;
+    }
+    .mb-10{
+        margin-bottom: 10px !important;
+    }
+    .container{
+        min-height: 51.5% !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card .card-title {
+        font-size: 12px !important;
+        font-weight: 400;
+    }
+    .newborder {
+        border-radius: 50px;
+    }
+    .block {
+        background-color: white;
+        width: 5px;
+        height: 97%;
+        position: absolute;
+        left: 49.7%;
+        border: 1px solid lightgrey;
+    }
+}
+
+
+span.badge{
+    margin: 2px !important;
+}
+
+.eheight{
+    min-height: 370px;
+}
+.thumb.active .value {
+    color: #fff;
+    margin-left: 0px !important;
+    margin-top: 5px !important;
+    font-size: 13px !important;
+}
+
+.blocks {
+    background-color: white;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    border: 1px solid lightgrey;
+}
+
+span.badge {
+    margin: 2px !important;
+}
+
+.eheight {
+    min-height: 370px;
+}
+
+.thumb.active .value {
+    color: #fff;
+    margin-left: 0px !important;
+    margin-top: 5px !important;
+    font-size: 13px !important;
+}
+
+.border-n {
+    border: none !important;
+}
+
+.newpadding {
+    padding: 10px !important;
+}
+
+.ulpad{
+    padding: 15px 0px;
+}
+
+.icn_tbl{
+    font-size: 22px !important;
+}
+
