@@ -12,7 +12,10 @@ import com.pineapplify.modal.RegisterModal;
 import com.pineapplify.utils.ConnectionManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.Calendar;
 
 /**
  *
@@ -70,7 +73,9 @@ public class UserServices {
     public boolean regUser(RegisterModal rm) throws SQLException {
         PreparedStatement ps;
         int updateQuery = 0;
-        LocalDate Date = LocalDate.now();
+        DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
+        Calendar calobj = Calendar.getInstance();
+        String Date = df.format(calobj.getTime());
 
         ps = (PreparedStatement) conn.prepareStatement("INSERT INTO tbl_users (US_NAME,US_ROLE,US_ADDRESS,US_PHONE,US_MAIL,US_PLACE,US_JOINDATE,US_PASS) VALUES(?,?,?,?,?,?,?,?)");
         ps.setString(1, rm.getUserName());
@@ -79,7 +84,7 @@ public class UserServices {
         ps.setString(4, rm.getUserPhone());
         ps.setString(5, rm.getUserMail());
         ps.setString(6, rm.getUserPlace());
-        ps.setString(7, Date.toString());
+        ps.setString(7, Date);
         ps.setString(8, rm.getUserPassword());
 
         updateQuery = ps.executeUpdate();

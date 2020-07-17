@@ -57,20 +57,24 @@ public class OwnerHomeServices {
     }
 
     public String convertDate(String sqldate) throws ParseException {
-        SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
-        SimpleDateFormat format2 = new SimpleDateFormat("dd-MMMM-yyyy");
-        Date date = format1.parse(sqldate);
-        return (format2.format(date));
+        if (sqldate.equals("N/A")) {
+            return ("N/A");
+        } else {
+            SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat format2 = new SimpleDateFormat("dd-MMM-yyyy");
+            Date date = format1.parse(sqldate);
+            return (format2.format(date));
+        }
     }
 
     public String fromStartToNow(String sqldate) throws ParseException {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        LocalDate start = LocalDate.parse(sqldate, formatter);
-        LocalDate today = LocalDate.now();
-        long days = ChronoUnit.DAYS.between(start, today);
-        if (days < 0) {
-            return "Not yet started";
+        if (sqldate.equals("N/A")) {
+            return ("N/A");
         } else {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            LocalDate start = LocalDate.parse(sqldate, formatter);
+            LocalDate today = LocalDate.now();
+            long days = ChronoUnit.DAYS.between(start, today);
             return days + " day of growth";
         }
     }

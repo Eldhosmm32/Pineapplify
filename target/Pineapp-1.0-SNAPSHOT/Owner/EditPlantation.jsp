@@ -159,7 +159,7 @@
                                         rs4.close();
 
                                         out.print("</select> "
-                                                + "<label>Color label</label> "
+                                                + "<label>Color</label> "
                                                 + "</div> "
                                                 + "<div class='input-field col s12 m12'> "
                                                 + "<select class='icons' name='worker' required> "
@@ -176,7 +176,7 @@
                                             }
                                     %>
                                 </select>
-                                <label>Color</label> 
+                                <label>Worker</label> 
                             </div>
                             <div class="input-field col s12 m12 l12">
                                 <input type="submit" class="waves-effect col s12 waves-light pcol btn" value="Update">
