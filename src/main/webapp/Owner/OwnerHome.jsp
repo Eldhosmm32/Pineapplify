@@ -88,6 +88,8 @@
             <li class="divider"></li>
             <li><a href="#!">&nbsp;&nbsp;&nbsp;Announce</a></li>
             <li class="divider"></li>
+	    <li><a href="Logout"><b>Logout</b></a></li>
+            <li class="divider"></li>
         </ul>
 
         <!--notification drop-down-->
