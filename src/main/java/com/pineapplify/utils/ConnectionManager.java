@@ -19,9 +19,9 @@ public class ConnectionManager {
 
     public Connection getSQLConneection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
-        //conn = (Connection) DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12355348", "sql12355348", "8ZiUr4USNU");
+        conn = (Connection) DriverManager.getConnection("jdbc:mysql://sql12.freemysqlhosting.net/sql12355348", "sql12355348", "8ZiUr4USNU");
         //conn = (Connection) DriverManager.getConnection("jdbc:mysql://www.db4free.net/db_pineapplify", "pineapplify", "5yL9-Fe-vqC3Q");
-        conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/db_agromart", "root", "root");
+        //conn = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/db_agromart", "root", "root");
 
         return conn;
     }
